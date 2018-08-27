@@ -13,10 +13,23 @@ grid-template-rows - declares number and size of rows
 
 grid-gap - creates space between columns and rows. Like margin
 
-repeat() - takes two arguments. How many times to repeat, and the size. Example repeat(5, 100px)
+repeat() - takes two arguments. How many times to repeat, and the size. Example repeat(5, 100px). The first argument repeats the pattern in the second - repeat(2, 1fr 2fr) = 1fr 2fr 1fr 2fr
+
+repeat() function can be used multiple times within template list - 50px repeat(50px 1fr 25px)
 
 grid-auto-rows - controls implicit rows
 
+grid-auto-flow - default is row. If changed to column it overflows items into inplicit row columns
+
+using percentages won't account for margin. 50% 50% will add to 100% of the space place margin
+
+"fr" unit - fractional or "free space". Splits up free space left after all the elements are laid out
+
+default width of element is the viewport. Default height is the content within
+
+unless I define a height of the grid, "fr" for row won't do anything. There's no free space
+
+auto - match the space with the content
 
 ##Concepts
 
@@ -35,3 +48,7 @@ In dev tools dotted lines are for implicit grid, dark dashes are for explicit gr
 Firefox won't allow multiple values for implicit rows. Chrome will
 
 By default an overflow of items will produce more implicit rows
+
+Item take up entire explicit grid:
+grid-column: 1 / -1
+grid-row: 1 / -1
