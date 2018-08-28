@@ -52,3 +52,7 @@ By default an overflow of items will produce more implicit rows
 Item take up entire explicit grid:
 grid-column: 1 / -1
 grid-row: 1 / -1
+
+What's the difference between 1fr and auto? Both stretch to fit content
+
+Giving an item a fixed width with widen the whole column. Use span make content cross over into more than one grid spot
