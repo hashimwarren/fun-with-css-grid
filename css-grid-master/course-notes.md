@@ -31,6 +31,8 @@ unless I define a height of the grid, "fr" for row won't do anything. There's no
 
 auto - match the space with the content
 
+grid-coloumn-start / end - control where an items starts and ends
+
 ##Concepts
 
 Whenever you declare a CSS Grid "container" you make all of its direct children into "items" in the grid
@@ -56,3 +58,17 @@ grid-row: 1 / -1
 What's the difference between 1fr and auto? Both stretch to fit content
 
 Giving an item a fixed width with widen the whole column. Use span make content cross over into more than one grid spot
+
+If I use grid-column then it will default to grid-coloumn-start / end values. I can see this in Dev Tools
+
+grid-column: 1 / -1; is like making width 100%
+
+grid-column can take span alone, start and end positions, or positions plus span
+
+## Resources
+
+Card Layout - https://getflywheel.com/layout/card-layout-css-grid-layout-how-to/
+
+Jen Simmons - https://labs.jensimmons.com/
+
+CSS Grid Garden - http://cssgridgarden.com/

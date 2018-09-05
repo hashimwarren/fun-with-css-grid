@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <section class="marketing-canvas">
+        <div class="hook">Hook</div>
+        <div class="format">Format</div>
+        <div class="channel">Channel</div>
+        <div class="target">Target</div>
+        <div class="action">Action</div>
+        <div class="stage">Stage</div>
+        <div class="metrics">Metrics <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quae sint earum reprehenderit doloremque ea totam? Quidem deleniti, consequuntur perferendis obcaecati ipsam saepe, iste culpa ratione facilis, itaque aliquam iusto!</p></div>
+
+        <div class="resources">Resources</div>
+        <div class="outcomes">Outcomes</div>
+    </section>
+</body>
+
+<style>
+    section {
+        display: block;
+        margin: 100px;
+    }
+    .marketing-canvas {
+        display: grid;
+        grid-template-columns: 1.8fr repeat(4, 1fr) 1.8fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 10px 7px;
+    }
+    .format {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+    .hook {
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 4;
+    }
+    .target {
+        grid-column: 4 / span 2;
+        grid-row: 1 / span 4;
+    }
+    .channel {
+        grid-column: 1;
+        grid-row: 3 / span 2;
+    }
+    .action {
+        grid-column: 6;
+        grid-row: 3 / span 2;
+    }
+    .stage {
+        grid-column: 6;
+        grid-row: 1 / span 2;
+    }
+    .resources {
+        grid-column: 1 / span 2;
+        grid-row: 5 / span 2;
+    }
+    .metrics {
+        grid-column: 3 / span 2;
+        grid-row: 5 / span 2;
+    }
+    .outcomes {
+        grid-column: 5 / span 2;
+        grid-row: 5 / span 2;
+    }
+    section * {
+        display: block;
+        border: 3px solid hsl(133, 88%, 30%);
+    }
+
+</style>
+</html>
