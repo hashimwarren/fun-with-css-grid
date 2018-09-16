@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>Header</header>
+    <article>
+            <svg height="200" width="200">
+            <circle cx="100" cy="100" r="8-" stroke="black" stroke-width="3" fill="green" />
+            </svg>
+    </article>
+
+    <footer>Footer</footer>
+</body>
+
+<style>
+    body {
+        display: grid;
+        grid-template-columns: .5fr 2fr 3fr 2fr .5fr ;
+        grid-template-rows: repeat(7, 50px);
+        grid-gap: 20px 20px;
+    }
+    body > * {
+        border: 1px solid gray;
+    }
+    header {
+        grid-column: 1 / -1;
+        grid-row: 1 / span 3;
+        background-color: blue;
+    }
+    article {
+        grid-row: 2 / span 3;
+        grid-column: 4;
+        background-color: red;
+    }
+
+
+    footer {
+        grid-column: 1 / -1;
+    }
+
+</style>
+</html>

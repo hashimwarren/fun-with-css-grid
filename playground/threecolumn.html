@@ -61,7 +61,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident velit debitis nam accusantium quia harum architecto laboriosam doloribus asperiores? Corporis voluptatibus ab delectus, sint quia rem perspiciatis officiis dolorum sed.</p>
 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quod est optio eveniet maxime ducimus itaque atque molestiae in enim provident magni beatae, nihil esse vero autem officia suscipit ut.</p>
-
+            <mark>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo libero consectetur, reiciendis maiores ad porro voluptate voluptatibus tempore modi neque, exercitationem reprehenderit laudantium, necessitatibus aliquam quos deleniti. Laboriosam, a iusto.</mark>
             </article>
 
 
@@ -121,7 +121,7 @@ footer
 
         article {
             display: grid;
-            grid-template-columns: 1fr 1fr 550px 1fr 1fr;
+            grid-template-columns: 1fr minmax(auto, 50px) minmax(auto, 450px) 1fr 1.5fr;
             grid-template-rows: auto;
             grid-column-gap: 10px;
             grid-row-gap: 20px;
@@ -129,25 +129,29 @@ footer
 
         }
         article > * {
-            grid-column: 3 / -3;
+            grid-column: 2 / -3;
             text-align: left;
             margin-top: 1px;
             margin-bottom: 5px;
+            background-image:
         }
         article h1 {
-            grid-column: 1 / -1;
+            grid-column: 1 / span 4;
             font-size: 3rem;
             text-align: center;
         }
 
 
         article h2 {
-            grid-column: 1 / -1;
+            grid-column: 1 /span 4;
             font-size: 2.5rem;
             text-align: center;
 
         }
-
+        article mark {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
         article img {
             clip-path: circle(50% at 50% 49%);
             shape-outside: circle(50%)

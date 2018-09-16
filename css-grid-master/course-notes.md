@@ -33,6 +33,8 @@ auto - match the space with the content
 
 grid-coloumn-start / end - control where an items starts and ends
 
+auto-fit - make as many coloums as can fit a track
+
 ##Concepts
 
 Whenever you declare a CSS Grid "container" you make all of its direct children into "items" in the grid
